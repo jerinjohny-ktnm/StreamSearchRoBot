@@ -41,7 +41,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     testinput = event.pattern_match.group(1)
     starkisnub = urllib.parse.quote_plus(testinput)
     results = []
-    sedlyf = "https://api.sumanjay.cf/torrent/?query=" + starkisnub
+    sedlyf = "https://api.sumanjay.cf/torrent/?query="
     try:
         okpro = requests.get(url=sedlyf, timeout=10).json()
     except:
