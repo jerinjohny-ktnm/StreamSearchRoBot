@@ -24,7 +24,7 @@ torrentbot = bot.start(bot_token=Config.BOT_TOKEN)
 async def search(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
-    await event.reply(message=f"**Hello, {firstname}, I Am Inline Stream Search Bot.** \n**Using Me You Can Fetch Torrent Magnet, Youtube Videos Link, Jio Saavan Music Links** \n**(C) @STARKGANG**",
+    await event.reply(message=f"**Hello, {firstname}, I Am Inline Stream Search Bot.** \n**Using Me You Can Fetch Torrent Magnet, Youtube Videos Link, Jio Saavan Music Links** \n**(C) @imjerin**",
                       buttons=[
                       [Button.switch_inline("Search Youtube", query="yt ", same_peer=True)],
                       [Button.switch_inline("Search Torrent", query="torrent ", same_peer=True)],
@@ -33,7 +33,7 @@ async def search(event):
                      )
 @torrentbot.on(events.NewMessage(pattern="^/repo$"))
 async def search(event):
-    await event.reply('<b><u>Here is My Repo</b></u> <code>https://github.com/StarkGang/StreamSearchRoBot</code>', parse_mode="HTML")
+    await event.reply('<b><u>Here is My Repo</b></u> <code>https://github.com/jerinjohny-ktnm/StreamSearchRoBot</code>', parse_mode="HTML")
 
 @torrentbot.on(events.InlineQuery(pattern=r"torrent (.*)"))
 async def inline_id_handler(event: events.InlineQuery.Event):
@@ -173,7 +173,7 @@ async def inline_handler(event):
         if query == None or " ": 
             resulte = builder.article(
                 title="Usage Guide.",
-                description="(C) @StarkGanG",
+                description="(C) @imjerin",
                 text=f"**How To Use Me?** \n**Youtube :** `@{firstname} yt <query>` \n**Example :** `@{firstname} yt why we lose song` \n\n**Torrent :** `@{firstname} torrent <query>` \n**Example :** `@{firstname} torrent avengers endgame ` \n\n**JioSaavan :** `@{firstname} jm <query>` \n**Example :** `@{firstname} jm dilbaar`",
                 buttons=[
                       [Button.url("Contact Me", f"t.me/{firstname}")],
