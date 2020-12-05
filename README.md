@@ -5,7 +5,7 @@
 
 
 # Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/StreamSearchRoBot/blob/main)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jerinjohny-ktnm/StreamSearchRoBot/blob/main)
 
 # Normal Way // HardWay
 ```python3
